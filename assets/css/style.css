@@ -28,3 +28,23 @@ img{
     display: flex;
     align-items: center;
 }
+
+.destaques-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.destaques-cardsImoveis{
+    width: 259px;
+    display: flex;
+    flex-direction: column;
+    border: solid 0.5px;
+    align-items: center;
+    border-top: none;
+}
+
+.destaques-cardsImoveis>img{
+    padding: 0;
+    height: 152px;
+    width: 261px;
+}
