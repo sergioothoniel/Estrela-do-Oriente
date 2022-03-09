@@ -11,17 +11,45 @@
     <header>
         <img src="./assets/imagens/logo.jpeg" alt="logoMarca">
         <nav class="header-nav">
-            <div class="header-nav-alugar">Alugar Imóvel</div>
-            <div class="header-nav-comprar">Comprar Imóvel</div>
-            <div class="header-nav-anunciar">Anunciar Imóvel</div>
-            <div class="header-nav-contato">Contato</div>
+            <div class="header-nav-alugar"><a href="">Alugar Imóvel</a></div>
+            <div class="header-nav-comprar"><a href="">Comprar Imóvel</a></div>
+            <div class="header-nav-anunciar"><a href="">Anunciar Imóvel</a></div>
+            <div class="header-nav-contato"><a href="">Contato</a></div>
             <div class="header-nav-entrar">Entrar</div>
             
         </nav>       
     </header>
 
     <main>
-        <div class="main-folder"><h1>Imóvei para Alugar ou Comprar no Rio de Janeiro</h1></div>
+        <div class="main-folder">
+            <h1>Imóveis para Alugar ou Comprar no Rio de Janeiro</h1>
+
+            <form class="form-busca" action="">
+                <div class="form-busca-titulo">Buscar Imóvel</div>
+                <div class="form-seleçoes">
+                    <select name="negocio" id="negocio" class="form-busca-input">
+                        <option value="Comprar">Comprar</option>
+                        <option value="Alugar">Alugar</option>                    
+                    </select>
+    
+                    <select name="tipo" id="tipo" class="form-busca-input">
+                        <option value>Tipo de Imóvel</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Loja">Loja</option>
+                        <option value="Terreno">Terreno</option>
+                        <option value="Sítio">Sítio</option>
+                                            
+                    </select>
+                    <input type="text" placeholder="Digite o local desejado" class="form-busca-input form-busca-input-text">
+                
+                </div>
+                
+                <button>Buscar</button>                
+            </form>
+        
+        
+        </div>
         
         <div>
             <h2>Destaques:</h2>

@@ -1,15 +1,17 @@
 export class Imovel{
 
-    constructor(id, titulo, endereço, preçoAluguel, aluguel = false, preçoVenda, venda = true, descriçao, imagens = []){
+    constructor(id, titulo, endereço, preçoAluguel, aluguel = false, preçoVenda, venda = true, descriçao, imagens = [], bairro, tipo){
         this.id           = id
         this.titulo       = titulo
-        this.endereço     = endereço
+        this.endereço     = endereço.toLowerCase()
         this.preçoAluguel = preçoAluguel
         this.aluguel      = aluguel
         this.preçoVenda   = preçoVenda
         this.venda        = venda
         this.descriçao    = descriçao
         this.imagens      = imagens
+        this.bairro       = bairro.toLowerCase()
+        this.tipo         = tipo
 
         this.adicionarNasListas()
         Imovel.listaImoveis.push(this)

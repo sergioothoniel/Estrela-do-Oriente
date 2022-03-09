@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
 header{
     display: flex;
     width: 100%;
@@ -5,7 +17,12 @@ header{
     justify-content: space-between;
     margin-top: 3vh;
     
-    margin-bottom: 0.7vh;
+    margin-bottom: 1vh;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
 }
 
 img{
@@ -20,31 +37,95 @@ img{
 }
 
 .main-folder{
-    width: 100%;
-    background-color: green;
-    height: 45vh;
+    width: 100vw;
+    background-image: url("../imagens/rj.png");
+    background-size: cover;
+    height: 65vh;
     color: white;
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-bottom: 7em;
+    flex-direction: column;
 }
+
+h1{
+    font-size: 2.3em;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.form-busca{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: rgb(220,220,220, 0.5);
+    height: 120px;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.form-busca>div{
+    align-self: flex-start;
+    color: black;
+}
+
+.form-busca-titulo{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.form-seleçoes{
+    display: block;
+}
+
+.form-busca-input{
+    height: 40px;
+    width: 150px;
+    margin: 0px 10px;
+}
+
+.form-busca-input-text{
+    width: 230px;
+    margin: 0px;
+}
+
+.form-busca>button{
+    padding: 8px 23px;
+    border-radius: 20px;
+    background: #4682B4;
+    color: white;
+}
+
 
 .destaques-section{
     display: flex;
     justify-content: space-evenly;
+    height: 65vh;
 }
 
 .destaques-cardsImoveis{
     width: 259px;
     display: flex;
     flex-direction: column;
-    border: solid 0.5px;
+    border: solid 0.5px #C0C0C0;
     align-items: center;
     border-top: none;
+    border-radius: 10%;
 }
 
 .destaques-cardsImoveis>img{
     padding: 0;
     height: 152px;
     width: 261px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+footer{
+    height: 30vh;
+    background-color: black;
+    margin-top: 120px;
+
 }
