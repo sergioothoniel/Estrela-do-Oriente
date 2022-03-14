@@ -26,8 +26,10 @@ a:hover{
     cursor: pointer;
 }
 
-img{
+header img{
     padding-left: 8vw;
+    width: 66px;
+    height: 44px;
 }
 
 .header-nav{
@@ -35,6 +37,10 @@ img{
     width: 70vw;
     justify-content: space-around;
     align-items: center;
+}
+
+.header-nav a:hover{
+    color: #4682B4;
 }
 
 .main-folder{
@@ -128,6 +134,10 @@ h1{
     border-radius: 10%;
 }
 
+.destaques-cardsImoveis:hover{
+    box-shadow: 8px 7px 30px rgb(26, 25, 25);
+}
+
 .destaques-cardsImoveis>img{
     padding: 0;
     height: 152px;
@@ -203,4 +213,8 @@ footer>ul{
 
 footer>ul>li>a{
     color: white;
+}
+
+footer>ul>li>a:hover{
+    color: #C0C0C0;
 }
