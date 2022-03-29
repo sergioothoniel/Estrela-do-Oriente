@@ -1,220 +1,217 @@
-*{
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    list-style: none;
-    text-decoration: none;
-
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
+header {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  justify-content: space-between;
+  margin-top: 3vh;
 
-header{
-    display: flex;
-    width: 100%;
-    height: 7vh;
-    justify-content: space-between;
-    margin-top: 3vh;
-    
-    margin-bottom: 1vh;
+  margin-bottom: 1vh;
 }
 
-a:hover{
-    cursor: pointer;
+a:hover {
+  cursor: pointer;
 }
 
-header img{
-    padding-left: 8vw;
-    width: 66px;
-    height: 44px;
+header img {
+  padding-left: 8vw;
+  width: 66px;
+  height: 44px;
 }
 
-.header-nav{
-    display: flex;
-    width: 70vw;
-    justify-content: space-around;
-    align-items: center;
+.header-nav {
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.header-nav a:hover{
-    color: #4682B4;
+.header-nav a:hover {
+  color: #4682b4;
 }
 
-.main-folder{
-    width: 100vw;
-    background-image: url("../imagens/rj.png");
-    background-size: cover;
-    height: 65vh;
-    color: white;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-bottom: 7em;
-    flex-direction: column;
+.main-folder {
+  width: 100vw;
+  background-image: url("../imagens/rj.png");
+  background-size: cover;
+  height: 65vh;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7em;
+  flex-direction: column;
 }
 
-h1{
-    font-size: 2.3em;
-    font-weight: bolder;
-    margin-bottom: 40px;
+h1 {
+  font-size: 2.3em;
+  font-weight: bolder;
+  margin-bottom: 40px;
 }
 
-.form-busca{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background: rgb(220,220,220, 0.5);
-    height: 120px;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 40px;
+.form-busca {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgb(220, 220, 220, 0.5);
+  height: 120px;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 40px;
 }
 
-.form-busca>div{
-    align-self: flex-start;
-    color: black;
+.form-busca > div {
+  align-self: flex-start;
+  color: black;
 }
 
-.form-busca-titulo{
-    font-size: 1.4em;
-    font-weight: bold;
+.form-busca-titulo {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
-.form-seleçoes{
-    display: block;
+.form-seleçoes {
+  display: block;
 }
 
-.form-busca-input{
-    height: 40px;
-    width: 150px;
-    margin: 0px 10px;
-    padding: 5px;
+.form-busca-input {
+  height: 40px;
+  width: 150px;
+  margin: 0px 10px;
+  padding: 5px;
 }
 
-.form-busca-input-text{
-    width: 230px;
-    margin: 0px;
+.form-busca-input-text {
+  width: 230px;
+  margin: 0px;
 }
 
-.form-busca>button{
-    padding: 8px 23px;
-    border-radius: 20px;
-    background: #4682B4;
-    color: white;
+.form-busca > button {
+  padding: 8px 23px;
+  border-radius: 20px;
+  background: #4682b4;
+  color: white;
 }
 
-.form-busca>button:hover{
-    cursor: pointer;
+.form-busca > button:hover {
+  cursor: pointer;
 }
 
-
-.destaques-section{
-    display: flex;
-    justify-content: space-evenly;
-    height: 65vh;
+.destaques-section {
+  display: flex;
+  justify-content: space-evenly;
+  height: 65vh;
 }
 
-.destaques>h2{
-    margin: 25px;
-    font-size: x-large;
-    color: rgb(94, 92, 92);
-
+.destaques > h2 {
+  margin: 25px;
+  font-size: x-large;
+  color: rgb(94, 92, 92);
 }
 
-.destaques-cardsImoveis{
-    width: 259px;
-    display: flex;
-    flex-direction: column;
-    border: solid 0.5px #C0C0C0;
-    align-items: center;
-    border-top: none;
-    border-radius: 10%;
+.destaques-cardsImoveis {
+  width: 259px;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.5px #c0c0c0;
+  align-items: center;
+  border-top: none;
+  border-radius: 10%;
 }
 
-.destaques-cardsImoveis:hover{
-    box-shadow: 8px 7px 30px rgb(26, 25, 25);
+.destaques-cardsImoveis:hover {
+  box-shadow: 8px 7px 30px rgb(26, 25, 25);
+  cursor: pointer;
 }
 
-.destaques-cardsImoveis>img{
-    padding: 0;
-    height: 152px;
-    width: 261px;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+.destaques-cardsImoveis > img {
+  padding: 0;
+  height: 152px;
+  width: 261px;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
 }
 
-.destaques-cardsImoveis-informaçoes{
-    display: flex;
-    flex-direction: column;
-    height: 180px;
-    justify-content: space-around;
+.destaques-cardsImoveis-informaçoes {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  justify-content: space-around;
+  margin: 0 5px 0 10px;
+  width: 244px;
 }
 
-.destaques-cardsImoveis-informaçoes h3{
-    font-family: sans-serif;
-    font-size: 1.07em;
+.destaques-cardsImoveis-informaçoes h3 {
+  font-family: sans-serif;
+  font-size: 1.07em;
 }
 
-.destaques-cardsImoveis-informaçoes p{
-    font-family: sans-serif;
-    font-size: 0.85em;
+.destaques-cardsImoveis-informaçoes p {
+  font-family: sans-serif;
+  font-size: 0.85em;
 }
 
-.destaques-cardsImoveis-informaçoes h2{
-    align-self: center;
-    font-size: x-large;
+.destaques-cardsImoveis-informaçoes h2 {
+  align-self: center;
+  font-size: x-large;
 }
 
-.destaques-cardsImoveis-caracteristicas{
-    display: flex;
-    justify-content: space-evenly;
-    width: 230px;
-    height: 100px;
+.destaques-cardsImoveis-caracteristicas {
+  display: flex;
+  justify-content: space-evenly;
+  width: 230px;
+  height: 100px;
 }
 
-.destaques-cardsImoveis-icones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.destaques-cardsImoveis-icones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.destaques-cardsImoveis-icones>img{
-    height: 16px;
-    width: 21px;
-    padding: 0%;
-    margin-bottom: 5px;
+.destaques-cardsImoveis-icones > img {
+  height: 16px;
+  width: 21px;
+  padding: 0%;
+  margin-bottom: 5px;
 }
 
-.destaques-cardsImoveis-icones>h4{
-    font-family: sans-serif;
-    font-size: 0.75em;
-    color: rgb(94, 92, 92);
-
+.destaques-cardsImoveis-icones > h4 {
+  font-family: sans-serif;
+  font-size: 0.75em;
+  color: rgb(94, 92, 92);
 }
 
-footer{
-    height: 30vh;
-    background-color: black;
-    margin-top: 250px;
-
+footer {
+  height: 30vh;
+  background-color: black;
+  margin-top: 250px;
 }
 
-footer>ul{
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 75%;
+footer > ul {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75%;
 }
 
-footer>ul>li>a{
-    color: white;
+footer > ul > li > a {
+  color: white;
 }
 
-footer>ul>li>a:hover{
-    color: #C0C0C0;
+footer > ul > li > a:hover {
+  color: #c0c0c0;
 }

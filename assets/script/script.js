@@ -1,19 +1,56 @@
 import { Imovel } from "../models/model-imovel.js";
 import { dbImoveis } from "./database.js";
 
-const sectionDestaque = document.querySelector('.destaques-section')
+const sectionDestaque = document.querySelector(".destaques-section");
 
-const estradaDoCampinho = new Imovel(dbImoveis[0].id,"Casa na Estrada do Campinho", "Estrada do Campinho, 112, Campo Grande, Rio de Janeiro-RJ", 1000, false, 'R$ 300.000,00', true, "Casa grande dividida em 3 partes, 2 lojas e uma kitnet nos fundos", dbImoveis[0].imagens, 'Campo Grande', ['casa','loja'], 80, 3, 2 )
+const listaDeImoveis = dbImoveis.forEach(
+  ({
+    id,
+    nome,
+    endereço,
+    tipo,
+    valor,
+    descriçao,
+    bairro,
+    tags,
+    area,
+    quartos,
+    vagas,
+    imagens,
+  }) => {
+    let venda = false;
+    let aluguel = false;
 
-const estradaDoCampinho2 = new Imovel(dbImoveis[0].id,"Casa na Estrada do Campinho", "Estrada do Campinho, 112, Campo Grande, Rio de Janeiro-RJ", 1000, false, 'R$ 300.000,00', true, "Casa grande dividida em 3 partes, 2 lojas e uma kitnet nos fundos", dbImoveis[0].imagens, 'Campo Grande', ['casa','loja'], 80, 3, 2 )
+    let valorAluguel = "";
+    let valorVenda = "";
+    if (tipo === "aluguel") {
+      aluguel = true;
+      valorAluguel = valor;
+    } else {
+      venda = true;
+      valorVenda = valor;
+    }
+    const imovel = new Imovel(
+      id,
+      nome,
+      endereço,
+      0,
+      aluguel,
+      valorVenda,
+      venda,
+      descriçao,
+      [...imagens],
+      bairro,
+      [...tags],
+      area,
+      quartos,
+      vagas
+    );
+  }
+);
 
-const estradaDoCampinho3 = new Imovel(dbImoveis[0].id,"Casa na Estrada do Campinho", "Estrada do Campinho, 112, Campo Grande, Rio de Janeiro-RJ", 1000, false, 'R$ 300.000,00', true, "Casa grande dividida em 3 partes, 2 lojas e uma kitnet nos fundos", dbImoveis[0].imagens, 'Campo Grande', ['casa','loja'], 80, 3, 2 )
-
-const estradaDoCampinho4 = new Imovel(dbImoveis[0].id,"Casa na Estrada do Campinho", "Estrada do Campinho, 112, Campo Grande, Rio de Janeiro-RJ", 1000, false, 'R$ 300.000,00', true, "Casa grande dividida em 3 partes, 2 lojas e uma kitnet nos fundos", dbImoveis[0].imagens, 'Campo Grande', ['casa','loja'], 80, 3, 2 )
-
-
-for(let i = 0; i < 4; i++){
-    Imovel.listaImoveis[Imovel.listaImoveis.length-1-i].criarCardsImoveis(sectionDestaque)
+for (let i = 0; i < 4; i++) {
+  Imovel.listaImoveis[Imovel.listaImoveis.length - 1 - i].criarCardsImoveis(
+    sectionDestaque
+  );
 }
-
-console.log(Imovel.listaImoveisVenda)

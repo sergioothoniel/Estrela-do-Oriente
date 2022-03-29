@@ -1,62 +1,62 @@
-export class Imovel{
+export class Imovel {
+  constructor(
+    id,
+    titulo,
+    endereço,
+    preçoAluguel,
+    aluguel = false,
+    preçoVenda,
+    venda = true,
+    descriçao,
+    imagens = [],
+    bairro,
+    tipo,
+    area,
+    quartos,
+    vagas
+  ) {
+    this.id = id;
+    this.titulo = titulo;
+    this.endereço = endereço;
+    this.preçoAluguel = preçoAluguel;
+    this.aluguel = aluguel;
+    this.preçoVenda = preçoVenda;
+    this.venda = venda;
+    this.descriçao = descriçao;
+    this.imagens = imagens;
+    this.bairro = bairro;
+    this.tipo = tipo;
+    this.area = area;
+    this.quartos = quartos;
+    this.vagas = vagas;
 
-    constructor(id, titulo, endereço, preçoAluguel, aluguel = false, preçoVenda, venda = true, descriçao, imagens = [], bairro, tipo, area, quartos, vagas){
-        this.id           = id
-        this.titulo       = titulo
-        this.endereço     = endereço
-        this.preçoAluguel = preçoAluguel
-        this.aluguel      = aluguel
-        this.preçoVenda   = preçoVenda
-        this.venda        = venda
-        this.descriçao    = descriçao
-        this.imagens      = imagens
-        this.bairro       = bairro
-        this.tipo         = tipo
-        this.area         = area
-        this.quartos      = quartos
-        this.vagas        = vagas
+    this.divImovel = document.createElement("div");
+    this.divImovel.classList.add("destaques-cardsImoveis");
+    this.divImovel.addEventListener("click", this);
 
-        this.adicionarNasListas()
-        Imovel.listaImoveis.push(this)
+    this.adicionarNasListas();
+    Imovel.listaImoveis.push(this);
+  }
+
+  static listaImoveisAluguel = [];
+  static listaImoveisVenda = [];
+  static listaImoveis = [];
+
+  static indiceImovelSelecionado;
+
+  adicionarNasListas() {
+    if (this.aluguel) {
+      Imovel.listaImoveisAluguel.push(this);
     }
-
-    static listaImoveisAluguel = []
-    static listaImoveisVenda   = []
-    static listaImoveis        = []
-
-    adicionarNasListas(){
-        if(this.aluguel){
-            Imovel.listaImoveisAluguel.push(this)
-            
-        }
-        if(this.venda){
-            Imovel.listaImoveisVenda.push(this)
-            
-        }
+    if (this.venda) {
+      Imovel.listaImoveisVenda.push(this);
     }
+  }
 
-    criarCardsImoveis(elementoPai){
-        const linkImovel = document.createElement('a')
-        linkImovel.classList.add("destaques-link")
-
-        const div = document.createElement('div')
-        div.classList.add("destaques-cardsImoveis")
-
-        linkImovel.appendChild(div)
-        /*const img = document.createElement('img')
-        const h3  = document.createElement('h3')
-        const h2  = document.createElement('h2')
-
-        img.src = this.imagens[0]
-        img.alt = this.titulo
-        h3.innerText = this.titulo
-        h2.innerText = this.preçoVenda
-
-        div.appendChild(img)
-        div.appendChild(h3)
-        div.appendChild(h2)*/
-
-        div.innerHTML = `<img src=${this.imagens[0]} alt="${this.titulo}">
+  criarCardsImoveis(elementoPai) {
+    this.divImovel.innerHTML = `<img src=${this.imagens[0]} alt="${
+      this.titulo
+    }">
         <div class="destaques-cardsImoveis-informaçoes">
         <h3>${this.titulo}</h3>
         <p>${this.bairro}</p>
@@ -66,7 +66,7 @@ export class Imovel{
 
         <div class="destaques-cardsImoveis-icones">
         <img src="./assets/imagens/icones/m2.png" alt="Área(m²)">
-        <h4>${this.area} m²</h4>
+        <h4>${this.area.toLocaleString("pt-BR")} m²</h4>
         </div>
 
         <div class="destaques-cardsImoveis-icones">
@@ -79,12 +79,17 @@ export class Imovel{
         <h4>${this.vagas} vaga(s)</h4>
         </div>
 
-        </div>`
+        </div>`;
 
-        elementoPai.appendChild(linkImovel)
+    elementoPai.appendChild(this.divImovel);
+  }
 
-        
-    }
+  handleEvent() {
+    Imovel.indiceImovelSelecionado = `${this.id}`;
+    localStorage.setItem("IdImovel-EstrelaDoOriente", this.id);
+    console.log(Imovel.indiceImovelSelecionado);
+    window.open("./assets/paginas/imovel.html");
+  }
 }
 
 /*<div class="destaques-cardsImoveis">
