@@ -12,12 +12,12 @@ export const dbImoveis = [
     quartos: 3,
     vagas: 2,
     imagens: [
-      "./assets/imagens/imoveis/1.jpeg",
-      "./assets/imagens/imoveis/3.jpeg",
-      "./assets/imagens/imoveis/5.jpeg",
-      "./assets/imagens/imoveis/7.jpeg",
-      "./assets/imagens/imoveis/9.jpeg",
-      "./assets/imagens/imoveis/10.jpeg",
+      "../../assets/imagens/imoveis/1.jpeg",
+      "../../assets/imagens/imoveis/3.jpeg",
+      "../../assets/imagens/imoveis/5.jpeg",
+      "../../assets/imagens/imoveis/7.jpeg",
+      "../../assets/imagens/imoveis/9.jpeg",
+      "../../assets/imagens/imoveis/10.jpeg",
     ],
   },
   {
@@ -35,12 +35,12 @@ export const dbImoveis = [
     quartos: 2,
     vagas: 2,
     imagens: [
-      "./assets/imagens/imoveis/apt-BellaTorre/1.jpeg",
-      "./assets/imagens/imoveis/apt-BellaTorre/2.jpeg",
-      "./assets/imagens/imoveis/apt-BellaTorre/3.jpeg",
-      "./assets/imagens/imoveis/apt-BellaTorre/4.jpeg",
-      "./assets/imagens/imoveis/apt-BellaTorre/5.jpeg",
-      "./assets/imagens/imoveis/apt-BellaTorre/6.jpeg",
+      "../../assets/imagens/imoveis/apt-BellaTorre/1.jpeg",
+      "../../assets/imagens/imoveis/apt-BellaTorre/2.jpeg",
+      "../../assets/imagens/imoveis/apt-BellaTorre/3.jpeg",
+      "../../assets/imagens/imoveis/apt-BellaTorre/4.jpeg",
+      "../../assets/imagens/imoveis/apt-BellaTorre/5.jpeg",
+      "../../assets/imagens/imoveis/apt-BellaTorre/6.jpeg",
     ],
   },
   {
@@ -57,8 +57,8 @@ export const dbImoveis = [
     quartos: 2,
     vagas: 2,
     imagens: [
-      "./assets/imagens/imoveis/Casa-StaTerezinha/1.jpeg",
-      "./assets/imagens/imoveis/Casa-StaTerezinha/2.jpeg",
+      "../../assets/imagens/imoveis/Casa-StaTerezinha/1.jpeg",
+      "../../assets/imagens/imoveis/Casa-StaTerezinha/2.jpeg",
     ],
   },
   {
@@ -75,7 +75,7 @@ export const dbImoveis = [
     area: 2330,
     quartos: 0,
     vagas: 0,
-    imagens: ["./assets/imagens/imoveis/Terreno_DIStaCruz/1.jpeg"],
+    imagens: ["../../assets/imagens/imoveis/Terreno_DIStaCruz/1.jpeg"],
   },
   {
     id: 5,
@@ -90,7 +90,7 @@ export const dbImoveis = [
     area: 277000,
     quartos: 0,
     vagas: 0,
-    imagens: ["./assets/imagens/imoveis/Terreno_DIStaCruz/terreno2.jpeg"],
+    imagens: ["../../assets/imagens/imoveis/Terreno_DIStaCruz/terreno2.jpeg"],
   },
   {
     id: 6,
@@ -105,7 +105,7 @@ export const dbImoveis = [
     area: 90000,
     quartos: 0,
     vagas: 0,
-    imagens: ["./assets/imagens/imoveis/Terreno_DIStaCruz/terrenos.jpeg"],
+    imagens: ["../../assets/imagens/imoveis/Terreno_DIStaCruz/terrenos.jpeg"],
   },
   {
     id: 7,
@@ -121,8 +121,8 @@ export const dbImoveis = [
     quartos: 0,
     vagas: 0,
     imagens: [
-      "./assets/imagens/imoveis/galpao-rioSP/1.jpeg",
-      "./assets/imagens/imoveis/galpao-rioSP/1.jpeg",
+      "../../assets/imagens/imoveis/galpao-rioSP/1.jpeg",
+      "../../assets/imagens/imoveis/galpao-rioSP/1.jpeg",
     ],
   },
   {
@@ -138,7 +138,7 @@ export const dbImoveis = [
     area: 1430,
     quartos: 0,
     vagas: 0,
-    imagens: ["./assets/imagens/imoveis/terreno-RuaVitorAlves/1.jpeg"],
+    imagens: ["../../assets/imagens/imoveis/terreno-RuaVitorAlves/1.jpeg"],
   },
   {
     id: 9,
@@ -154,13 +154,13 @@ export const dbImoveis = [
     quartos: 0,
     vagas: 0,
     imagens: [
-      "./assets/imagens/imoveis/sitio-CG/1.jpeg",
-      "./assets/imagens/imoveis/sitio-CG/2.jpeg",
-      "./assets/imagens/imoveis/sitio-CG/3.jpeg",
-      "./assets/imagens/imoveis/sitio-CG/4.jpeg",
-      "./assets/imagens/imoveis/sitio-CG/5.jpeg",
-      "./assets/imagens/imoveis/sitio-CG/6.jpeg",
-      "./assets/imagens/imoveis/sitio-CG/7.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/1.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/2.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/3.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/4.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/5.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/6.jpeg",
+      "../../assets/imagens/imoveis/sitio-CG/7.jpeg",
     ],
   },
 ];

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    justify-content: space-between;
+    margin-top: 3vh;
+  
+    margin-bottom: 1vh;
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+  
+  header img {
+    padding-left: 8vw;
+    width: 66px;
+    height: 44px;
+  }
+  
+  .header-nav {
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header-nav a:hover {
+    color: #4682b4;
+  }
+  
+  .main-folder {
+    width: 100vw;
+    background-image: url("../imagens/rj.png");
+    background-size: cover;
+    height: 65vh;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 7em;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2.3em;
+    font-weight: bolder;
+    margin-bottom: 40px;
+  }
+  
+  
+  footer {
+    height: 30vh;
+    background-color: black;
+    margin-top: 250px;
+  }
+  
+  footer > ul {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+  }
+  
+  footer > ul > li > a {
+    color: white;
+  }
+  
+  footer > ul > li > a:hover {
+    color: #c0c0c0;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-vendaAluguel{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    border: 1px solid rgb(177, 171, 171);
+    width: 850px; 
+    margin-bottom: 30px;   
+    margin-bottom: 30px;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .card-vendaAluguel:hover{
+    box-shadow: 8px 7px 30px rgb(26, 25, 25);
+  }
+
+  .card-infoImovel{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    height: 190px;
+    align-items: center;
+  }
+
+  .card-containerImg{
+    width: 200px;
+    height: 198px;
+    display: flex;
+    border: 1px solid #dfd4d4bf;
+    background: #e1e1e1;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+  .card-containerImg img{
+      max-width: 200px;
+      max-height: 200px;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .card-vendaAluguel h3{
+    width: 303px;
+    height: 40px;
+    margin-right: 45px;
+}
+
+.card-vendaAluguel h4{
+    width: 250px;
+    color: #35358f;
+}
+
+  .card-infoImovel p{
+      width: 100%;
+      font-size: 13px;
+      color: #1c1b1b;
+  }
+
+  .card-infoImovel h6{
+    font-size: 12px;
+    color: #545252;
+}
+
+
