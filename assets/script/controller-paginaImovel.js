@@ -1,9 +1,9 @@
 import { Imovel } from "../models/model-imovel.js";
 
-const IdImovel = localStorage.getItem("IdImovel-EstrelaDoOriente");
-const imovelSelecionado = Imovel.listaImoveis.filter(
-  (value) => value.id == IdImovel
-);
+//----------------------Get params pela URL------------------------
+const currentURL = window.location.search
+const url = new URLSearchParams(currentURL)
 
-console.log(IdImovel);
-console.log(Imovel.listaImoveis);
+const idImovel = Number(url.get('id'))
+
+console.log(idImovel)

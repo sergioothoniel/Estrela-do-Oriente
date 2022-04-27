@@ -143,7 +143,7 @@ export const dbImoveis = [
   {
     id: 9,
     nome: "Sítio em Campo Grande",
-    endereço: "",
+    endereço: "Campo Grande",
     tipo: "venda", //aluguel ou venda
     valor: "R$ 1.500.000,00",
     descriçao:

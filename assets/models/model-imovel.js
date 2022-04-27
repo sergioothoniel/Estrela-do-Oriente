@@ -86,14 +86,7 @@ export class Imovel {
 
   handleEvent() {
     Imovel.indiceImovelSelecionado = `${this.id}`;
-    localStorage.setItem("IdImovel-EstrelaDoOriente", this.id);
-    console.log(Imovel.indiceImovelSelecionado);
-    window.open("./assets/paginas/imovel.html");
+    window.open(`./assets/paginas/imovel.html?id=${this.id}`);
   }
 }
 
-/*<div class="destaques-cardsImoveis">
-                    <img src="./assets/imagens/imoveis/1.jpeg" alt="">
-                    <h3>Casa na estrada do campinho</h3>
-                    <h2>R$300.000,00</h2>
-                </div>*/

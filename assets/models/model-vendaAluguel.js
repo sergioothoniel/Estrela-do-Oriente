@@ -68,16 +68,25 @@ export class Imovel {
 
   handleEvent() {
     Imovel.indiceImovelSelecionado = `${this.id}`;
-    localStorage.setItem("IdImovel-EstrelaDoOriente", this.id);
-    console.log(Imovel.indiceImovelSelecionado);
-    window.open("./assets/paginas/imovel.html");
+    window.open(`../paginas/imovel.html?id=${this.id}`);
+  }
+
+  static filtrarImoveisPorTexto(listaImoveis, texto){
+
+    const textoNormalizado = texto.toLowerCase()
+
+    const listaFiltrada = listaImoveis.filter((imovel)=>{
+      const nomeNormalizado = imovel.titulo.toLowerCase()
+      const endereçoNormalizado = imovel.endereço.toLowerCase()
+      const descriçaoNormalizada = imovel.descriçao.toLowerCase()
+
+      return (nomeNormalizado.includes(textoNormalizado) 
+      || endereçoNormalizado.includes(textoNormalizado) || descriçaoNormalizada.includes(textoNormalizado)
+      )
+    })
+
+    return listaFiltrada
   }
 }
 
-/*<div class="card-containerImg"><img src="../imagens/imoveis/1.jpeg" alt=""></div>
-<div class="card-infoImovel">
-    <h3>Vendo casa em Campo grande</h3>
-    <h4>R$300.000,00</h4>
-    <p>80 m² | 3 quartos | 2 vagas</p>
-    <h6>Campo Grande</h6>
-</div>*/
+

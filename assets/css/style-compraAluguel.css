@@ -155,4 +155,39 @@
     color: #545252;
 }
 
+.busca-imovel input{
+  border: 1px solid rgb(136, 236, 136);
+  height: 28px;
+  width: 250px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+}
+
+.busca-filtros{
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.busca-imovel button{
+    height: 30px;
+    width: 60px;
+    border-top-right-radius: 5px;
+    margin-left: -5px;
+    background: #3ad73a;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.filtros-categoria{
+  display: flex;
+}
+
+.filtros-categoria div{
+  margin-right: 10px;
+}
+
 

@@ -24,8 +24,34 @@ const listaImoveisVenda = dbImoveis.forEach(({id, nome, endereço, tipo, valor, 
 
   const imoveisExibidos = Imovel.listaImoveisVenda.length > 10 ? 10 : Imovel.listaImoveisVenda.length
 
-  for(let i = Imovel.listaImoveisVenda.length; i>Imovel.listaImoveisVenda.length-10 ; i--){
+  for(let i = Imovel.listaImoveisVenda.length; i>Imovel.listaImoveisVenda.length-imoveisExibidos ; i--){
       Imovel.listaImoveisVenda[i-1].criarCardsImoveis(containerLista)
   }
+
+
+///////////////////////Busca-Filtros////////////////////////////
+
+const inputBusca = document.querySelector("#busca-input")
+const botaoBusca = document.querySelector('#busca-btn')
+
+botaoBusca.addEventListener("click", ()=>{
+  const textoBuscado = inputBusca.value
+  
+  const listaFiltradaPorBusca = Imovel.filtrarImoveisPorTexto(Imovel.listaImoveisVenda, textoBuscado)
+
+  containerLista.innerHTML = ""
+
+  listaFiltradaPorBusca.forEach((imovel)=>{
+    imovel.criarCardsImoveis(containerLista)
+  })
+  
+})
+
+/////////////////////////////////////////////////////////////////
+
+
+
+
+
 
   
