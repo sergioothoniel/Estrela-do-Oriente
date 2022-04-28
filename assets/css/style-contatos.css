@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center    
+}
+
+main h3{
+    align-self: flex-start;
+    margin: 30px;
+    font-size: medium;
+}
+
+.contatos-corretores{
+    align-self: flex-start;
+    margin: 30px 50px;
+    border: 0.5px solid #cfcfcf;
+    padding: 40px;
+}
+
+.contatos-corretores img{
+    width: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    max-width: 50%;
+}
+
+p+p{
+    margin-top: 30px;
+}

@@ -122,7 +122,7 @@ export const dbImoveis = [
     vagas: 0,
     imagens: [
       "../../assets/imagens/imoveis/galpao-rioSP/1.jpeg",
-      "../../assets/imagens/imoveis/galpao-rioSP/1.jpeg",
+      "../../assets/imagens/imoveis/galpao-rioSP/2.jpeg",
     ],
   },
   {

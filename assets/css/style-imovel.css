@@ -1,0 +1,132 @@
+main{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 712px;
+    margin: auto;
+}
+
+main h1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: x-large;    
+}
+
+.main-photos{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main-photos-containerMainImg{
+    height: 63vh;
+    background-color: gray;
+    width: 642px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-photos-containerMainImg img{
+    max-width: 642px;
+    max-height: 63vh;
+}
+
+.main-photos-morePhotos{
+    margin-left: 10px;
+}
+
+.main-photos-morePhotos ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+
+.main-photos-morePhotos li{
+    width: 60px;
+    height: 60px;
+}
+
+li + li{
+    margin-top: 10px;
+}
+
+.main-photos-morePhotos img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6
+}
+
+#imagemSelecionada{           
+    opacity: 1;
+}
+
+main h3{
+    margin-bottom: 40px;
+    font-size: larger;
+}
+
+.main-description{
+    margin-bottom: 80px;
+}
+
+.main-details{
+    margin-bottom: 30px;
+}
+
+.main-details h5{
+    margin-bottom: 15px;
+}
+
+.main-details h6{
+    color: gray;
+    margin-bottom: 3px;
+}
+
+.main-details-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.main-divisor{
+    width: 60%;
+    height: 0.6px;
+    background-color: rgb(208, 208, 208);
+    margin: 20px 0;
+}
+
+.main-location h5{
+    margin-bottom: 15px;
+}
+
+.main-location p{
+    margin-bottom: 5px;
+}
+
+.contatos{
+    position: fixed;
+    left: 76%;
+    top: 38%;
+    border: 1px solid rgb(207, 202, 202);
+    width: 20vw;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contatos-corretores{
+    margin-top: 15px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contatos-corretores img{
+    width: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
