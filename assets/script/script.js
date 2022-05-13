@@ -3,7 +3,14 @@ import { dbImoveis } from "./database.js";
 
 const sectionDestaque = document.querySelector(".destaques-section");
 
-const listaDeImoveis = dbImoveis.forEach(
+const newDbImoveis = dbImoveis.map((imovel) =>{
+  const newImgs = imovel.imagens.map(imagemURL => imagemURL.slice(4))
+  return {...imovel, imagens: newImgs}
+})
+
+console.log(newDbImoveis)
+
+const listaDeImoveis = newDbImoveis.forEach(
   ({
     id,
     nome,
