@@ -8,8 +8,6 @@ const newDbImoveis = dbImoveis.map((imovel) =>{
   return {...imovel, imagens: newImgs}
 })
 
-console.log(newDbImoveis)
-
 const listaDeImoveis = newDbImoveis.forEach(
   ({
     id,
